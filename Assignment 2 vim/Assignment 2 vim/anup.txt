@@ -1,0 +1,28 @@
+Q1. :%s/[aest]/\U&/g
+:w newvim.txt
+
+Q2. :call feedkeys(repeat("y", 12) . "q") | %s/Sachin/SRT the Great/gci
+
+Q3. :read !ls
+
+Q4. :let @a=1 | %s/\Ubuntu/\='UBUNTU_'.(@a+setreg('a',@a+1))/g
+
+Q5. :%s/\(\<\w\+\>\)\_s*\<\1\>/\1/g
+
+Q6. :redir >> output.txt
+    :g/^Date\|^Subject\|^From\|^To/
+    :redir END
+
+Q7. VISUAL MODE: <Ctrl V>  select then Shift I then // then Esc
+    Mapping: :map <f2> :’<‘> norm i// <CR>
+	     :map <f3> :’<‘> norm xx  <CR>
+	Copy to ~/.vimrc
+	:map <f2> :’<‘> norm i// <CR>
+	:map <f3> :’<‘> norm xx  <CR>
+
+Q8. 1. :%s_//.*$__g
+2. :%s/\/\*\_.\{-}\*\///g
+
+Q9. :set ic, q a /god dw i almighty <Press CR> q 
+:map <F2> : @a <CR>
+:map <F2> : call feedkeys('y'.'q') | %s/god/almighty\r/gci

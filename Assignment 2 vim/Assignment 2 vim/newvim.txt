@@ -1,0 +1,35 @@
+Vim (/v?m/;[3] A conTrAcTion of Vi IMprovEd) iS A TExT EdiTor wriTTEn by BrAm MoolEnAAr And firST rElEASEd publicly in 1991. BASEd on ThE idEAS of ThE vi EdiTor common To Unix-likE SySTEmS, Vim iS dESignEd for uSE boTh from A commAnd-linE inTErfAcE And AS A STAndAlonE ApplicATion in A grAphicAl uSEr inTErfAcE. Vim iS frEE And opEn SourcE SofTwArE And iS rElEASEd undEr A licEnSE ThAT includES SomE chAriTywArE clAuSES, EncourAging uSErS who Enjoy ThE SofTwArE To conSidEr donATing To childrEn in UgAndA.[4] ThE licEnSE iS compATiblE wiTh ThE GNU GEnErAl Public LicEnSE.
+
+AlThough Vim wAS originAlly rElEASEd for ThE AmigA, Vim hAS SincE bEEn dEvElopEd To bE croSS-plATform, SupporTing mAny oThEr plATformS. In 2006, iT wAS voTEd ThE moST populAr EdiTor AmongST Linux JournAl rEAdErS.[5]
+
+ConTEnTS  [hidE] 
+1 HiSTory
+2 InTErfAcE
+3 CuSTomizATion
+4 FEATurES And improvEmEnTS ovEr vi
+5 AvAilAbiliTy
+6 RElEASE hiSTory
+7 SEE AlSo
+8 REfErEncES
+9 ExTErnAl linkS
+HiSTory[EdiT]
+BrAm MoolEnAAr bEgAn working on Vim for ThE AmigA compuTEr in 1988. MoolEnAAr firST publicly rElEASEd Vim (v1.14) in 1991.[6] Vim wAS bASEd on An EArliEr EdiTor, STEviE, for ThE ATAri ST,[1] crEATEd by Tim ThompSon, Tony AndrEwS And G.R. (FrEd) WAlTEr.[ciTATion nEEdEd]
+
+ThE nAmE "Vim" iS An Acronym for "Vi IMprovEd"[7] bEcAuSE Vim iS An ExTEndEd vErSion of ThE vi EdiTor, wiTh mAny AddiTionAl fEATurES dESignEd To bE hElpful in EdiTing progrAm SourcE codE. OriginAlly, ThE Acronym STood for "Vi IMiTATion", buT ThAT wAS chAngEd wiTh ThE rElEASE of Vim 2.0 in DEcEmbEr 1993.[8] A lATEr commEnT STATES ThAT ThE rEASon for chAnging ThE nAmE wAS ThAT Vim'S fEATurE SET SurpASSEd ThAT of vi.[9]
+
+InTErfAcE[EdiT]
+
+
+GrAphicAl Vim undEr GTK+ 2.
+LikE vi, Vim'S inTErfAcE iS noT bASEd on mEnuS or iconS buT on commAndS givEn in A TExT uSEr inTErfAcE; iTS GUI modE, gVim, AddS mEnuS And ToolbArS for commonly uSEd commAndS buT ThE full funcTionAliTy iS STill ExprESSEd Through iTS commAnd linE modE.
+
+Vim hAS A builT-in TuToriAl for bEginnErS (AccESSiblE Through ThE "vimTuTor" commAnd). ThErE iS AlSo ThE Vim USErS' MAnuAl ThAT dETAilS Vim'S fEATurES. ThiS mAnuAl cAn bE rEAd from wiThin Vim, or found onlinE.[10][11]
+
+Vim AlSo hAS A builT-in hElp fAciliTy (uSing ThE :hElp commAnd) ThAT AllowS uSErS To quEry And nAvigATE Through commAndS And fEATurES.
+
+CuSTomizATion[EdiT]
+PArT of Vim'S powEr iS ThAT iT cAn bE ExTEnSivEly cuSTomizEd. ThE bASic inTErfAcE cAn bE conTrollEd by ThE mAny opTionS AvAilAblE, And ThE uSEr cAn dEfinE pErSonAlizEd kEy mAppingS—ofTEn cAllEd mAcroS—or AbbrEviATionS To AuTomATE SEquEncES of kEySTrokES, or EvEn cAll inTErnAl or uSEr dEfinEd funcTionS.
+
+ThErE ArE mAny pluginS AvAilAblE ThAT will ExTEnd or Add nEw funcTionAliTy To Vim. ThESE complEx ScripTS ArE uSuAlly wriTTEn in Vim'S inTErnAl ScripTing lAnguAgE vimScripT.[12] Vim AlSo SupporTS ScripTing uSing LuA (AS of Vim 7.3), PErl, PyThon, RAckET[13] (formErly PLT SchEmE), Ruby, And Tcl.
+
+ThErE ArE projEcTS bundling TogEThEr complEx ScripTS And cuSTomizATionS And AimEd AT Turning Vim inTo A Tool for A SpEcific TASk or Adding A mAjor flAvour To iTS bEhAviour. ExAmplES includE CrEAm, which mAkES Vim bEhAvE likE A click-And-TypE EdiTor, or VimOuTlinEr, which providES A comforTAblE ouTlinEr for uSErS of Unix-likE SySTEmS.

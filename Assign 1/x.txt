@@ -1,0 +1,2 @@
+If $m$ is mass, $a$ is the acceleration then force $F
+$ is given by $F = m ∗ a$

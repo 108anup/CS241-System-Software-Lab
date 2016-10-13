@@ -1,0 +1,27 @@
+
+ 15 Date: Thu, 21 Jun 2012 17:00:24 +0530
+ 15 Date: Thu, 21 Jun 2012 17:00:24 +0530
+ 15 Date: Thu, 21 Jun 2012 17:00:24 +0530
+Pattern not found: ^Date\|^Subject\|^From\|^To
+
+
+
+
+
+
+ 15 Date: Thu, 21 Jun 2012 17:00:24 +0530
+ 18 From: noticeboard@iitg.ernet.in (Notice Board, IITG)
+ 19 To: fac@iitg.ernet.in, staff@iitg.ernet.in, stud@iitg.ernet.in,
+ 21 Subject: New notice "Notice : Extension of term - Head, Biotech." posted from General Administration
+ 44 Date: Fri, 27 Apr 2012 14:02:04 +0530
+ 45 Subject: Fwd: [Mycolleagues] Postdoctoral position in cloud security
+ 46 From: "Placement cell, IIT Guwahati" <placement@iitg.ernet.in>
+ 47 To: rs@iitg.ernet.in
+ 68 Date: Sun, 29 Jul 2012 18:28:47 +0530
+ 69 Subject: 87.5% Discount on The Economist magazine
+ 70 From: "Publication Subcommittee, IIT Guwahati" <psc@iitg.ernet.in>
+ 71 To: stud@iitg.ernet.in
+ 95 Date: Wed, 13 Jun 2012 00:42:34 +0530
+ 96 Subject: Regarding  Student Participation for upcoming BloombergUTV TV
+ 98 From: "Students' Welfare Board" <gensec_welfare@iitg.ernet.in>
+ 99 To: stud@iitg.ernet.in

@@ -1,0 +1,29 @@
+Q1.:%s/[aest]/\U&/g
+:w newvim.txt
+
+Q2. :call feedkeys(repeat("y", 12) . "q") | %s/Sachin/SRT\ the\ Great/gc
+
+Q3. :read !ls
+
+Q4. :let @a=1 | %s/ubuntu/\='UBUNTU_'.(@a+setreg('a',@a+1))/gi
+
+Q5. :%s/\(\<\w\+\>\)\_s*\<\1\>/\1/g
+
+Q6. :redir >> output.txt 
+ 	:g/^Date\|^Subject\|^From\|^To
+ 	:redir END
+
+Q7. VISUAL:
+	<C-V> then select block using arrow keys then <S-I> (Shift I) then "//" then <Esc>
+	<C-V> select then x for uncomment
+	
+	Mapping:
+	:map <F2> : '<'> norm i// <CR>
+	:map <F3> " '<'> norm xx <CR>	
+
+Q8. 1. :%s_//.*$_g
+2. :%s/\/\*\_.\{-}\*\///g
+
+Q9. :set ic, q a /god dw almighty <Press Carriage Return> q, :map <key combination> : call feedkeys('y'.'q') | %s/\<god\>/almighty\r/igc <CR>
+M2: 
+

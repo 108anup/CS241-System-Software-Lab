@@ -1,0 +1,40 @@
+Q1. find . -type f -printf "%f\n" | grep -Eio '\.[^.]+$' | sort | uniq -ic | sort -nr
+OR
+find . -type f -printf "%f\n" | awk -F'.' '{printf(".%s\n",$NF)}' | sort| uniq -c | sort -g
+OR
+find . -type f -printf"%f\n" | awk -F'.' '{$(NF-1)="";print;}' | sort| uniq -c | sort -g -> Not good
+
+First find all the file names and print them, then find whatever is there after '.'and then char and then end of line and remove the rest then sort unique and count
+
+Q2. grep -o '[b-df-hj-np-tv-z]' q2.txt | sort | uniq > consonants.txt 
+Find all Consonants and redirect to File
+grep -o '[aeiou]' q2.txt | sort | uniq > vowels.txt
+check of spelling errors then get first column of Record separated by & and skip the first one.
+cat q2.txt | aspell list > mis.txt
+cat q2.txt | aspell -a | awk -v RS="&" '{ print $1; }' | tail -n +2
+
+Q3. find . -type f -name "* *" | rename 's/ /_/g'
+Find all files with matching '* *' and then sustitute ' ' with '_' using perl script rename. 
+
+Q4. awk 'BEGIN{RS="$";i=1}{if(i%2==0){print $0;}i++;}' q4.txt     #-> is better than
+awk -F '$' '{for(i=2;i<=NF;i+=2){if(i%2==0){print $i;}}}' q4.txt
+Seperate records with $ and print all the even records.
+
+Q5. find ~/Downloads -type f -printf "%sB %f\n"| sort -nr | head -n 10
+find and print sizes of all files then sort and head
+
+Q6. tar -cvf - ~/Downloads | split --bytes=50MB - Downloads_part.tar. and to concatenate use:
+cat Downloads_part.tar.* | tar -xvf -
+- => refers to STDOUT or STDIN acc to context so make a tar push bytes to STDOUT then pipe them to split and make it use stdin
+concatenate all the bytes and pipe them to tar and tell it to use STDIN.
+
+Q7. mkdir /media/iso && mount -o loop name_of_iso.iso /media/iso
+Technically a loop device is a block device that writes to a file, rather than a piece of hardware. So you always use/need to use the loop back device when mounting a file.
+
+Q8. mkdir pdfs && find ~/Downlods -type f -name '*.pdf' -printf "%f\n" -exec cp {} ~/pdfs/ \;
+Find and execute copy command.
+
+Q9. awk 'BEGIN{RS="\n\n"; FS="\n"; ORS="\n\n"; OFS="";}{$1=$1; print $0;}' q9.txt
+just scan and change OFS use $1=$1 to rebuild record using the new OFS.
+
+

@@ -1,0 +1,5 @@
+Q8. 1. :%s_//.*$_g
+2. :%s/\/\*\_.\{-}\*\///g
+
+Q9. :set ic, q a /god dw almighty <Press C-R> q 
+:map 
